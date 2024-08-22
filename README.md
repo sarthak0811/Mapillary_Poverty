@@ -19,4 +19,5 @@ The best-gcn-embed file runs the final code.
 Process: The main working can be understood from the Guthub repo of sustain-lab group (above link). The following changes were made to improve the accuracies:
   1) Augmenting the data for clusters that have very few images.
   2) The original model by SustainLab works with a Graph-level prediction model, which only works at an Intra-Cluster Level. To better understand the Inter-Cluster relationships, a super-graph is made where each cluster is one of the original graphs. Features from the final embed layer were extracted for each graph, which become the node features for the super-graph. the adjacency matrix is constructed by using the distance between each cluster centre.
+     
 ![Alt text](./network.png?raw=true "Title")
